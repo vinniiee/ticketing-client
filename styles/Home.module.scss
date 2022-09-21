@@ -183,7 +183,7 @@
   font-family: "Alfa Slab One", cursive;
   font-weight: 300;
   letter-spacing: 1rem;
-  animation: moveInRight 1s ease-in-out .3s;
+  animation: moveInLeft 1s ease-in-out .5s ;
   animation-fill-mode: backwards;
   /*duration timing-function delay iteration-count direction fill-mode;*/
   /* font-family: "Open Sans", sans-serif; */ }
@@ -193,8 +193,9 @@
   display: block;
   font-weight: 200;
   font-size: 3.5rem;
-  animation: moveInLeft 1s ease-in-out .3s; }
-
+  animation: moveInRight 1s ease-in-out .5s ;
+animation-fill-mode: backwards ; }
+ 
 .headingPrimaryTop {
   position: absolute;
   top: -10%;
@@ -203,7 +204,8 @@
   display: block;
   font-weight: 200;
   font-size: 3.5rem;
-  animation: moveInLeft 1s ease-in-out .3s;
+  animation: moveInLeft 1s ease-in-out .5s;
+  animation-fill-mode: backwards;
   /* transform: translate(0,50%);  */ }
 
 .headingPrimaryBottom {
@@ -213,7 +215,8 @@
   display: block;
   font-weight: 200;
   font-size: 3.5rem;
-  animation: moveInRight 1s ease-in-out .3s;
+  animation: moveInRight 1s ease-in-out .5s;
+  animation-fill-mode: backwards;
   /* transform: translate(0,50%);  */ }
 
 .headingSecondary {
@@ -346,8 +349,8 @@
   padding: 2rem 5rem;
   /* margin: 20px; */
   cursor: pointer;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.7rem;
+  font-weight: 100;
   border-width: 0;
   border-radius: 5rem;
   letter-spacing: .1rem;
@@ -389,7 +392,7 @@
   opacity: 0; }
 
 .btnAnimated {
-  animation: moveInUp 1s ease-in-out .3s;
+  animation: moveInUp 1s ease-in-out 1.5s;
   animation-fill-mode: backwards;
   /*it automatically applies style at 0% of animation*/ }
 
@@ -466,6 +469,9 @@
   width: 70%;
   background-position: center;
   padding: 5rem; }
+
+
+
 
 .header {
   height: 95vh;

@@ -1,32 +1,61 @@
+:root{
+  --color-primary: #a13333;
+  --color-primary-light: #b3541e;
+  --color-primary-dark: #330c0c;
+
+
+  --color-primary-light-1: #e19061;
+}
+
+
 html {
-  font-size: 59.5%; }
-  @media (max-width: 93.75em) {
-    html {
-      font-size: 55%; } }
-  @media (max-width: 80em) {
-    html {
-      font-size: 48%; } }
-  @media (max-width: 72em) {
-    html {
-      font-size: 40%; } }
-  @media (max-width: 60em) {
-    html {
-      font-size: 30%; } }
-  @media (max-width: 44em) {
-    html {
-      font-size: 25%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 20%; } }
-  @media (max-width: 30em) {
-    html {
-      font-size: 15%; } }
-  @media (max-width: 22.5em) {
-    html {
-      font-size: 10%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 70%; } }
+  font-size: 59.5%;
+}
+@media (max-width: 93.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 80em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 72em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 60em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 44em) {
+  html {
+    font-size: 25%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 15%;
+  }
+}
+@media (max-width: 22.5em) {
+  html {
+    font-size: 10%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -34,9 +63,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: white;
-  background-image: linear-gradient(to bottom, #b3541e 0%, #330c0c);
+  background-image: linear-gradient(to bottom, var( --color-primary-light) , var(--color-primary-dark));
   padding: 3rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
 
 /* a {
   color: inherit;
@@ -46,7 +78,8 @@ body {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 /* @media (prefers-color-scheme: dark) {
   html {

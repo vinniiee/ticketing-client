@@ -1,0 +1,17 @@
+.content{
+    display: flex;
+}
+
+.header{
+    height: 7rem;
+}
+
+.sideBar{
+    background-color: #222;
+    flex: 0 0 17%;
+}
+
+.eventDescription{
+    flex: 1;
+    background-color: #666;
+}

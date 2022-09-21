@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Home.module.scss';
 
 
@@ -14,7 +15,7 @@ import styles from '../styles/Home.module.scss';
 
 
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <div className={styles.container}>
      <div className={styles.header}>
@@ -28,7 +29,7 @@ export default function Home() {
           <span className={styles.headingPrimarySub}>${`What's Next?`}</span>
           <span className={styles.headingPrimaryBottom}>{`>>>`}</span>
         </h1>
-        <a href="#" className={`${styles.btn} ${styles.btnWhite} ${styles.btnAnimated} ${styles.marginTop5}`}>EXPLORE NOW </a>
+        <Link href="/events" ><button className={`${styles.btn} ${styles.btnWhite} ${styles.btnAnimated} ${styles.marginTop5}`}>EXPLORE NOW</button></Link>
       </div>
     </div>
     <main>

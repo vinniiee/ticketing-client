@@ -1,0 +1,16 @@
+
+// {
+//     font-size: 62.5%;
+// } 
+
+.container{
+    margin: 1rem;
+    // font-size: 100% ;
+    min-height: 100vh;
+    max-width: 150rem;
+    margin: 2rem auto;
+    color: #999;
+    // background-image: linear-gradient(to bottom ,#b3541e, #330c0c) ;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0px 0rem 4rem rgba($color: #000000, $alpha: .5);
+}
