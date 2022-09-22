@@ -3,7 +3,15 @@
 }
 
 .header{
-    height: 7rem;
+    padding: 1.5rem 1.5rem;
+    // height: 7rem;
+    &Logo{
+        height: 4rem;
+        width: 4rem;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sideBar{
