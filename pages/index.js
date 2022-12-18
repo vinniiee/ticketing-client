@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import {  useRouter } from 'next/router';
+import { useRef } from 'react';
 import styles from '../styles/Home.module.scss';
 
 
@@ -16,6 +19,19 @@ import styles from '../styles/Home.module.scss';
 
 
 export default function LandingPage() {
+
+  const nameRef = useRef("");
+  const emailRef = useRef("");
+  const router = useRouter();
+  const onSubmit = async (event)=>{
+
+    event.preventDefault();
+    router.push(`/auth/${emailRef.current.value}`);
+
+
+  }
+
+
   return (
     <div className={styles.container}>
      <div className={styles.header}>
@@ -26,7 +42,7 @@ export default function LandingPage() {
         <h1 className={styles.headingPrimary}>
           <span className={styles.headingPrimaryTop}> {`<<<`} </span>
           <span className={styles.headingPrimaryMain}>Zippy</span>
-          <span className={styles.headingPrimarySub}>${`What's Next?`}</span>
+          <span className={styles.headingPrimarySub}>{`What's Next?`}</span>
           <span className={styles.headingPrimaryBottom}>{`>>>`}</span>
         </h1>
         <Link href="/events" ><button className={`${styles.btn} ${styles.btnWhite} ${styles.btnAnimated} ${styles.marginTop5}`}>EXPLORE NOW</button></Link>
@@ -69,21 +85,20 @@ export default function LandingPage() {
         <div className={styles.registrationForm}>
           
           
-          <form action="#" className={styles.form}>
+          <form onSubmit={onSubmit} className={styles.form}>
             <label htmlFor="name" className={styles.formLabel}><h2 className={`${styles.headingForm} ${styles.marginBottom5} ${styles.marginLeft2}`}>
               start booking now
             </h2></label>
-            <div className={styles.formGroup}>
-              <input type="text" className={styles.formInput} id="name" placeholder="Full Name" required/>
-              <label htmlFor="name" className={styles.formLabel}>Full Name</label>
-            </div>
+            
             
             <div className={styles.formGroup}>
-              <input type="email" className={styles.formInput} id="email" placeholder="Email"/>
+              <input type="email" className={styles.formInput} id="email" placeholder="Email" ref={emailRef}/>
               <label htmlFor="email" className={styles.formLabel}>Email</label>
             </div>
             <div className={styles.formGroup}>
-              <button className={`${styles.btn} ${styles.btnBrown}`}>Get Started</button>
+             
+                <button className={`${styles.btn} ${styles.btnBrown}`}>Get Started</button>
+             
             </div>
           </form>
 

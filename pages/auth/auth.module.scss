@@ -1,0 +1,300 @@
+.auth {
+    width: 90%;
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.4);
+    padding: 4rem 6rem;
+    margin-left: 4rem;
+  
+    &Heading {
+      color: transparent;
+      font-size: 5rem;
+      font-weight: 600;
+      margin-bottom: 4rem;
+      border-bottom: 2px solid #ddd;
+      -webkit-background-clip: text;
+      text-transform: uppercase;
+      background-image: linear-gradient(to right , #b3541e ,  #330c0c 80%);    
+      &Span{
+        font-size: 6rem;
+        font-weight: 300 ;
+        line-height: 10rem;
+      }
+    }
+  
+    &Form{
+  
+      font-family: inherit;
+      // box-shadow:1rem 1em 2rem rgba(0, 0, 0, 0.4);
+      // padding: 2rem;
+      margin-top: 5rem;
+      width: 100%;
+      
+      &Group{
+        width: 80%;
+        // margin: 3rem 0rem;
+        margin: 4rem 1rem;
+        margin-bottom: 6rem;
+        position: relative;
+        & textarea {
+          resize: none;
+          width: 100%;
+          height: 15rem;
+        }
+        padding: 1rem;
+        // display: flex;
+        // align-items: center;
+  
+        &Input:placeholder-shown + &Label {
+          // color: #000;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(4rem);
+        }
+  
+         &InputGenre:placeholder-shown + &LabelGenre {
+            // opacity: 0;
+            // visibility: hidden;
+            transform: translateY(4rem);
+         }
+        //  &InputGenre:placeholder-shown{
+        //   letter-spacing: 3rem;
+        //  }
+        //  &LabelGenre{
+        //   opacity: 0;
+        //     visibility: hidden;
+        //     transform: translateY(4rem);
+        //  }
+  
+        &Label{
+          // visibility: hidden;
+          position: absolute;
+          // visibility: inherit;
+          bottom: 80%;
+          color: #777;
+          // display: block;
+          font-size: 2.2rem;
+          
+          padding: 1rem;
+          // text-transform: uppercase;
+          transition: all .5s;
+          &CoverPhoto{
+            position: relative;
+            // justify-self: flex-start;
+            // align-self: flex-start;
+          }
+          &Genre{
+            // visibility: hidden;
+            color: #777;
+            // display: block;
+            font-size: 2.2rem;
+            // margin-bottom: -2rem;  
+            padding: 1rem;
+            position: absolute;
+            bottom: 80%;
+            // display: block;
+            // width: 100%;
+            transition: all .5s ease-in-out; 
+                 }
+        }
+        &Input{
+          // margin-left: 2rem;
+          display: block;
+          background-color: rgb(248, 248, 248);
+          height: 4rem;
+          width: 100%;
+          border: none;
+          font-family: inherit;
+          border-bottom: 3px solid transparent;
+          color: #999;
+          // text-transform: capitalize;
+          font-weight:400;
+          letter-spacing: .05rem;
+          font-size: 2.2rem;
+          padding: .5rem 1rem;
+          
+          
+          outline: none;
+          transition: all .2s;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+          &:focus:invalid {
+            border-bottom: 3px solid orange; }
+          &:focus{
+            border-bottom: 3px solid #b3541e;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+          }
+          // padding: 1rem;
+  
+          
+          // &Email{
+          //   text-transform: lowercase;
+          // }
+          // &Email:-ms-input-placeholder{
+          //   text-transform: capitalize;
+          // }
+          &Genre{
+            &:hover{
+              border-bottom: 3px solid #b3541e;
+            }
+            &:hover ~ &Options{
+              z-index: 3;
+              visibility: visible;
+            }
+  
+            &Options{
+              cursor: pointer;
+              position: absolute;
+              width: 97%;
+              font-size: 2.2rem;
+              visibility: hidden;
+              list-style: none;
+              transition: all .2s ease-in-out;
+              // height: 4rem;
+              &:hover{
+                visibility: visible;
+                z-index: 3;
+              }
+            }
+            &Option{
+              transition: all .2s;
+              padding: .5rem 1rem;
+              // opacity: 0;
+  
+              width: 100%;
+              background-color: rgb(248, 248, 248);
+              &:hover{
+                color: rgb(248, 248, 248);
+                background-image: linear-gradient(to right bottom, #b3541e, #330c0c);            }
+              // &::after{
+              //   content: " ";
+              //   height: 4rem;
+              //   width: 10rem;
+              //   background-image: linear-gradient(to right bottom, #b3541e, #330c0c);
+              // }
+            }
+          }
+  
+          // &Genre{
+          //   // appearance: none;
+          //   display: block;
+          //   width: 100%;
+          //   height: 4rem;
+          //   background-color: rgb(248, 248, 248);
+          //   font-family: inherit;
+          //   font-size: 2.2rem;
+          //   font-weight: inherit;
+          //   color: inherit;
+          //   text-align: left;
+          //   // width: 20rem;
+          //   border: none;
+          //   outline: none;
+          //   border-bottom: 2px solid transparent;
+          //   // background-color: aqua;
+          //   padding: .5rem 1rem;
+  
+          // }
+  
+  
+  
+        }
+    
+        &InputFile{
+          cursor: pointer;
+          font-family: inherit;
+          // font-size: 3rem;
+          &::-webkit-file-upload-button {
+            // visibility: hidden;
+            margin-left: 2rem;
+            outline: none;
+            content: "wwdeqw";
+            display: inline;
+            background-color: #b3541e;
+            border: none;
+            height: 2.8rem;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 380;
+            width: 12rem;
+            color: #fff;
+            font-size: 1.8rem;
+            border-radius: 500px;
+          }
+          // &::before{
+          //   content: "wdqejdi1";
+          // }
+        }
+        &RadioOption{
+          // cursor: pointer;
+          // display: flex;
+          // flex-direction: row;
+          // justify-content: center;
+          margin: 0rem 2rem;
+          // height: 5rem;
+          &Button{
+            cursor: pointer;
+            // font-size: 2rem;
+            color: #b3541e;
+            background-color: #b3541e;
+  
+          }
+  
+          &Label{
+            cursor: pointer;
+  
+            margin-left: 1rem;
+            font-size: 1.8rem;
+          }
+        }
+      } 
+  
+      &Button{
+        display: inline-block;
+        color: rgb(248, 248, 248);
+        width: 20rem;
+        font-family: inherit;
+        font-weight: 300;
+        letter-spacing:.1rem;
+        text-transform: uppercase;
+        height: 5.5rem;
+        margin:2rem 3rem;
+        font-size: 1.7rem;
+        border: none;
+        background-color: #b3541e;
+        border-radius: 100px;
+        transition: all .2s;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.05);
+          box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.4);
+        }
+        &:active{
+          transform: scale(1.02) translateY(1px);
+        }
+  
+      }
+  
+  
+    }
+  .error{
+    color: orange;
+  }
+  
+  }
+  // button{
+  //   color: aqua;
+  // }
+  
+  .marginTop3{
+    margin-top: 8rem;
+  }
+  
+  .marginBottom2{
+    margin-bottom: 2rem;  
+  }
+  
+  .horizontalAlign{
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+  }

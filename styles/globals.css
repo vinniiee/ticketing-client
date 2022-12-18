@@ -62,12 +62,14 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: white;
+  color: #888;
   background-image: linear-gradient(to bottom, var( --color-primary-light) , var(--color-primary-dark));
   padding: 3rem;
   box-sizing: border-box;
   background-size:cover;
   background-repeat:no-repeat;
+  min-height: 100vh;
+  /* width: 100vw; */
 }
 
 /* a {

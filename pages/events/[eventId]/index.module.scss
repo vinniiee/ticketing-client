@@ -1,0 +1,222 @@
+.eventDetails{
+
+    // width: 80%;
+    box-shadow: 0rem 0rem 4rem rgba(0,0,0,.2);
+
+    &Header{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        height: 50rem;
+        background-image:  linear-gradient(to right, transparent 0%, rgba(0,0,0,.9) 70%), url(../../../public/img/events/open-mic1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &Heading{
+            color: #ddd;
+            font-size: 5rem;
+            font-weight: 500;
+            grid-column: 1/5;
+            // justify-self: center;
+            align-self: center;
+            padding: 3rem;
+            
+        }
+
+        &Info{
+            margin-top: 2rem;
+            padding: 2rem;
+            grid-column: 5/-1;
+            grid-row: 1/-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &Item{
+                font-size: 2rem;
+                flex: 0 0 33%;
+                display: flex;
+                align-items: center;
+
+                &Icon{
+                    height: 4rem;
+                    width: 4rem;
+                    fill: aliceblue;
+                    margin: 2rem;
+                }
+
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+    &Description{
+
+        line-height: 3.5rem;
+        padding: 6rem;
+
+        &Heading{
+            font-size: 6rem;
+            margin-bottom: 4rem;
+
+        }
+        &Content{
+            color: #999;
+            font-size: 2rem;
+            letter-spacing: .05rem;
+            font-weight: 300;
+        }
+
+    }
+
+
+
+
+
+}
+
+
+.btn:link,
+.btn:visited,
+.btn {
+  /* width: 250px; */
+  /* position: absolute; */
+  /* left: 50%; */
+//   margin-top: 5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: inherit;
+  text-decoration: none;
+  /* transform: translate(-50%,-50%); */
+  padding: 2rem 5rem;
+  /* margin: 20px; */
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 300;
+  border-width: 0;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  transition: all .2s;
+  position: relative; }
+
+.btn:hover {
+  transform: translate(0rem, -0.3rem);
+  box-shadow: 0rem 1rem 4rem black; }
+
+.btn:active {
+  transform: translate(0rem, -0.1rem);
+  box-shadow: 0rem 0.5rem 2rem black; }
+
+
+// .btn::after {
+//     content: "";
+//     display: inline-block;
+//     background-color: white;
+//     border-radius: 10rem;
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     transition: all .4s; }
+
+
+.btnBrown {
+    // font-family: inherit;
+    background-color: #b3541e;
+    color: white;
+    width: 25rem;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    padding: 2rem; }
+  
+  .btnBrown::after {
+    content: "";
+    display: inline-block;
+    background-color: #b3541e;
+    border-radius: 1000rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+ .btnBrown:hover::after{
+    transform: scaleX(1.2) scaleY(1.5);
+    opacity: 0;
+ }
+
+    .bookingButtons{
+        margin-top: 5rem;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .countButton{
+        transition: all .2s;
+        width: 7rem;
+        height: 5.5rem;
+        font-size: 2rem;
+        &:hover{
+            transform: scale(1.02);
+        }
+        &Decrement{
+        cursor: pointer;
+        font-size: 2rem;
+        background-color: #b3541e;
+        border-width: 0;
+        border-bottom-left-radius: 100px;
+        border-top-left-radius: 100px;
+        color: #ddd;
+        }
+
+
+        &Input::-webkit-outer-spin-button,
+&Input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+        &Input,
+        &Input:active,
+        &Input:focus,
+        &Input:visited{
+            // -webkit-appearance: none;
+        width: 7rem;
+        height: 5.5rem;
+        // border-width: 0;
+        outline: none;
+        color: #444;
+        font-family: inherit;
+
+        border-style:none;
+        text-align: center;
+        background-color: rgba(245, 245, 245, 1);
+        font-size: 2rem;
+
+        }
+
+        &Increment{
+        cursor: pointer;
+        // width: 7rem;
+        // height: 5rem;
+        background-color: #b3541e;
+        border-width: 0;
+        font-size: 2rem;
+        color: #ddd;
+
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+        
+    }

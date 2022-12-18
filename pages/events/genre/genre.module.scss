@@ -1,0 +1,74 @@
+.genres {
+  width: 100%;
+  box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+
+  &Heading {
+    color: transparent;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #ddd;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right , #b3541e ,  #330c0c 80%);   
+    &Span{
+      font-size: 6rem;
+      font-weight: 300 ;
+      line-height: 10rem;
+    }
+  }
+
+  &List {
+    margin: 10rem 0rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    gap: 4rem;
+    &Item {
+      cursor: pointer;
+      position: relative;
+      background-size: fill;
+      color: transparent;
+      transition: all 2s;
+      position: relative;
+      backface-visibility: hidden;
+      &Photo {
+        transition: all 0.2s;
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+      }
+
+      &Backface {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: black;
+        top: 0%;
+        opacity: 0;
+        background-image: linear-gradient(
+          to right bottom,
+          #b3551eb2 0%,
+          #330c0cab 70%
+        );
+        transition: all 0.2s;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        padding: 1rem 3rem;
+        &Span {
+          color: #ddd;
+          text-align: end;
+          grid-row: -1;
+          font-size: 4rem;
+          line-height: 5rem;
+        }
+      }
+
+      &:hover > &Backface {
+        box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.6);
+        opacity: 100%;
+      }
+    }
+  }
+}
