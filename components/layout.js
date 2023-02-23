@@ -69,6 +69,7 @@ function Layout(props) {
     dispatch(authActions.signout());
     dispatch(navActions.toggleAuthButton({active:false}));
     dispatch(navActions.togglePublishButton({active:false}));
+    dispatch(navActions.toggleGenreButton({active:false}));
     
     };
     await signoutFlow();
@@ -82,7 +83,7 @@ function Layout(props) {
     // if(router.pathname.startsWith("/events/genre")){
     // console.log("path: ",router.pathname);
     // }
-    console.log("from active handler...",router.pathname)
+    console.log("from active handler...",router.pathname);
     if(router.pathname.startsWith("/auth"))    dispatch(navActions.toggleAuthButton({active:false}));
       else if(router.pathname.startsWith("/events/genre"))  dispatch(navActions.toggleGenreButton({active:false}));
       else if(router.pathname.startsWith("/events/publish"))  dispatch(navActions.togglePublishButton({active:false}));

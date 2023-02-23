@@ -8,8 +8,15 @@ import theatreImage from "../../../public/img/genres/theatre.jpg";
 import artExhibitionImage from "../../../public/img/genres/artExhibition.jpg";
 import standupComedyImage from "../../../public/img/genres/open-mic.jpg";
 import workshopImage from "../../../public/img/genres/workshop.jpg";
+import { useLayoutEffect } from "react";
 
 export default function Genre() {
+
+  useLayoutEffect(()=>{
+    
+  },[])
+
+
   return (
     <div className={styles.genres}>
       <h1 className={styles.genresHeading}>EXPLORE BY GENRE <span className={styles.genresHeadingSpan}>{`>>>`}</span></h1>

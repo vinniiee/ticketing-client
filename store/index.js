@@ -21,7 +21,7 @@ const authSlice = createSlice({
     },
   },
 });
-
+ 
 const navInitialState = {
   homeButtonClasses:  `${styles.button}`,
   genreButtonClasses: `${styles.button}`,
