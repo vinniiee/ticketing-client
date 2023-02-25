@@ -6,7 +6,6 @@ import {  store } from '../store';
 function MyApp({ Component, pageProps }) {
   // console.log(Component);
   const router  = useRouter();
-  
 
   console.log(router.asPath);
   

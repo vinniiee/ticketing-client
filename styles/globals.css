@@ -2,12 +2,8 @@
   --color-primary: #a13333;
   --color-primary-light: #b3541e;
   --color-primary-dark: #330c0c;
-
-
   --color-primary-light-1: #e19061;
 }
-
-
 html {
   font-size: 59.5%;
 }
@@ -56,7 +52,6 @@ html {
     font-size: 70%;
   }
 }
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;

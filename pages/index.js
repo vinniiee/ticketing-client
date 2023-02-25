@@ -4,34 +4,14 @@ import {  useRouter } from 'next/router';
 import { useRef } from 'react';
 import styles from '../styles/Home.module.scss';
 
-
-// import Head from 'next/head';
-// import Image from 'next/image';
-
-// import whiteLogo from "../public/img/white-logo.png";
-// import col1 from "../public/img/col-1.jpg";
-// import col2 from "../public/img/col-2.jpg";
-// import col3 from "../public/img/col-3.jpg";
-// import githubLogo from "../public/img/github-mark/GitHub-Mark-120px-plus.png";
-// import leetcodeLogo from "../public/img/leetcode.png";
-// import Image from 'next/image';
-
-
-
 export default function LandingPage() {
-
   const nameRef = useRef("");
   const emailRef = useRef("");
   const router = useRouter();
   const onSubmit = async (event)=>{
-
     event.preventDefault();
     router.push(`/auth/${emailRef.current.value}`);
-
-
   }
-
-
   return (
     <div className={styles.container}>
      <div className={styles.header}>
@@ -90,18 +70,14 @@ export default function LandingPage() {
               start booking now
             </h2></label>
             
-            
             <div className={styles.formGroup}>
               <input type="email" className={styles.formInput} id="email" placeholder="Email" ref={emailRef}/>
               <label htmlFor="email" className={styles.formLabel}>Email</label>
             </div>
             <div className={styles.formGroup}>
-             
                 <button className={`${styles.btn} ${styles.btnBrown}`}>Get Started</button>
-             
             </div>
           </form>
-
         </div>
       </section>
     </main>
@@ -114,7 +90,7 @@ export default function LandingPage() {
     <a href="https://leetcode.com/vinniiee/"><img src="/img/leetcode.png" alt="footer-logo-2" className={`${styles.footerLogo} ${styles.footerLogo2}`}/></a>
     </div>
     <p className={styles.footnote}>&copy; vinniiee 2022</p>
-    
+   
   </footer>
   </div>
   )
