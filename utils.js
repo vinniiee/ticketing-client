@@ -9,7 +9,6 @@ export const serverRequest = async (url,method,body,headers)=>{
         method:method,
         body: JSON.stringify(body),
         headers:{
-          'Access-Control-Allow-Origin':'*',
             "Content-type":"application/json",
             ...headers,
             
