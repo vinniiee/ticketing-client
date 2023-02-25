@@ -5,14 +5,13 @@ export const capitalise = (str)=>{
 }
 export const serverRequest = async (url,method,body,headers)=>{
   // 
-    const response = await fetch(`https://ticketing-api-u8lu.onrender.com/${url}`,{
+    const response = await fetch(`https://ticketing-api-2510.onrender.com/${url}`,{
         credentials:'include',
         method:method,
         body: JSON.stringify(body),
         headers:{
             "Content-type":"application/json",
             ...headers,
-            
         },
     });
     // console.log(response.data);
