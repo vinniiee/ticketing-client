@@ -5,7 +5,7 @@ export const capitalise = (str)=>{
 }
 export const serverRequest = async (url,method,body,headers)=>{
   // 
-    const response = await fetch(`https://ticketing-api-2510.onrender.com/${url}`,{
+    const response = await fetch(`https://ticketing-api-2510.onrender.com:443/${url}`,{
         credentials:'include',
         method:method,
         body: JSON.stringify(body),
