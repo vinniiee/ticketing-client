@@ -4,7 +4,6 @@ export const capitalise = (str)=>{
     return str.charAt(0).toUpperCase()+str.slice(1);
 }
 export const serverRequest = async (url,method,body,headers)=>{
-  console.log("@@@@@@@@@@@@@@@"+process.env.API_URI);
     const response = await fetch(`https://ticketing-api-u8lu.onrender.com/${url}`,{
         credentials:'include',
         method:method,
