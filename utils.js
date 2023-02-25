@@ -4,7 +4,6 @@ export const capitalise = (str)=>{
     return str.charAt(0).toUpperCase()+str.slice(1);
 }
 export const serverRequest = async (url,method,body,headers)=>{
-  // 
     const response = await fetch(`https://ticketing-api-2510.onrender.com:443/${url}`,{
         credentials:'include',
         method:method,
@@ -14,11 +13,10 @@ export const serverRequest = async (url,method,body,headers)=>{
             ...headers,
         },
     });
-    // console.log(response.data);
     const data = await response.json();
     console.log("from utils...",data);
     return data;
-}
+} 
 export const authorizationHandler = async (data) => {
   console.log("Handling Authorization...");
   // console.log("##########",password)
