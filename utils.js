@@ -1,3 +1,5 @@
+import { authActions } from "./store";
+
 export const capitalise = (str)=>{
     return str.charAt(0).toUpperCase()+str.slice(1);
 }
@@ -17,7 +19,6 @@ export const serverRequest = async (url,method,body,headers)=>{
     console.log("from utils...",data);
     return data;
 }
-
 export const authorizationHandler = async (data) => {
   console.log("Handling Authorization...");
   // console.log("##########",password)
