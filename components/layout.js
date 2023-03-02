@@ -65,7 +65,7 @@ function Layout(props) {
   // console.log("homeClasses: ",homeClasses);
   const signoutHandler = async ()=>{
     const signoutFlow = async ()=>{
-      serverRequest("auth/signout","GET");
+      await serverRequest("auth/signout","GET");
     dispatch(authActions.signout());
     dispatch(navActions.toggleAuthButton({active:false}));
     dispatch(navActions.togglePublishButton({active:false}));
