@@ -11,7 +11,7 @@ function Event() {
       <div className={styles.eventDetailsHeader}>
         <h1 className={styles.eventDetailsHeaderHeading}>Open Mic Event Open Mic Event Open Mic  </h1>
         <ul className={styles.eventDetailsHeaderInfo}>
-            <li className={styles.eventDetailsHeaderInfoItem}><LocationIcon className={styles.eventDetailsHeaderInfoItemIcon}/><span className={styles.eventsListItemDetailsContentSpan}>  BENGALURUBENGALURU</span></li>
+            <li className={styles.eventDetailsHeaderInfoItem}><LocationIcon className={styles.eventDetailsHeaderInfoItemIcon}/><span className={styles.eventsListItemDetailsContentSpan}>  Bengaluru</span></li>
             <li className={styles.eventDetailsHeaderInfoItem}><DateIcon className={styles.eventDetailsHeaderInfoItemIcon}/><span className={styles.eventsListItemDetailsContentSpan}> 11th Oct 7:00 PM</span></li>
             <li className={styles.eventDetailsHeaderInfoItem}><CostIcon className={styles.eventDetailsHeaderInfoItemIcon}/><span className={styles.eventsListItemDetailsContentSpan}> 500</span></li>
         </ul>
