@@ -6,10 +6,7 @@ import { useDispatch } from 'react-redux';
 import { authActions } from '../store';
 import styles from '../styles/Home.module.scss';
 export default function LandingPage(props) {
-  const dispatch = useDispatch();
-  if(pageProps.user){
-    dispatch(authActions.signin({ name: data.name, email: data.email }));
-  }
+  // const dispatch = useDispatch();
   
   const nameRef = useRef("");
   const emailRef = useRef("");
