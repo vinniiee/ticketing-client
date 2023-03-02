@@ -2,9 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {  useRouter } from 'next/router';
 import { useRef } from 'react';
+import { useDispatch } from 'react-redux';
+import { authActions } from '../store';
 import styles from '../styles/Home.module.scss';
-
-export default function LandingPage() {
+export default function LandingPage(props) {
+  const dispatch = useDispatch();
+  if(pageProps.user){
+    dispatch(authActions.signin({ name: data.name, email: data.email }));
+  }
+  
   const nameRef = useRef("");
   const emailRef = useRef("");
   const router = useRouter();
